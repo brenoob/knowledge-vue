@@ -8,15 +8,19 @@
         <h1 class="title">
             <a href="">{{ title }}</a>
         </h1>
+        <DropDown />
     </header>
 </template>
 
 <script>
+import DropDown from './dropDown.vue';
+
 export default {
     name: "Header",
     props: {
         title: String,
-        hideToggle: Boolean
+        hideToggle: Boolean,
+        hideUserDropDown: Boolean
     },
     // data() {
     //     return {
@@ -25,18 +29,18 @@ export default {
     // },
     computed: {
         open() {
-            return this.$store.state.isMenuVisible ? "fa-solid fa-x" : "fa-solid fa-bars"
+            return this.$store.state.isMenuVisible ? "fa-solid fa-x" : "fa-solid fa-bars";
             // return this.isActive ? "fa-solid fa-bars" : "fa-solid fa-x"
         }
     },
     methods: {
         toggleMenu() {
             return (
-                // this.isActive = this.isActive ? false : true,
-                this.$store.commit("toggleMenu")
-            )
+            // this.isActive = this.isActive ? false : true,
+            this.$store.commit("toggleMenu"));
         }
-    }
+    },
+    components: { DropDown }
 }
 </script>
 
