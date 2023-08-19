@@ -1,7 +1,6 @@
 <template>
     <div class="page-title">
         <h1>
-            <i v-if="open" :class="open" ></i>
             {{ main }}
         </h1>
         <h2>{{ sub }}</h2>
@@ -11,7 +10,7 @@
 <script>
     export default {
         name: "PageTitle",
-        props: ['main', 'sub', 'open']
+        props: ['main', 'sub']
     }
 </script>
 

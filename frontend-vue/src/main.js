@@ -13,10 +13,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faBars, faX, faGear, faSignOut, faHouse } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faX, faGear, faSignOut, faHouse, faCogs } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faBars, faX, faGear, faSignOut, faHouse )
+library.add(faBars, faX, faGear, faSignOut, faHouse, faCogs )
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

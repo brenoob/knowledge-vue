@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-dropdown id="user-dropdown" right :text="user.name" class="m-md-3 colorbg" style="backgroundColor: #0f0c29;">
+        <b-dropdown id="user-dropdown" right :text="user.name" class="m-md-3 colorbg">
             <b-dropdown-item>{{ user.email }}</b-dropdown-item>
             <b-dropdown-divider></b-dropdown-divider>
             <b-dropdown-item>
