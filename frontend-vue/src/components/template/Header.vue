@@ -6,7 +6,7 @@
             </i>
         </a>
         <h1 class="title">
-            <a href="">{{ title }}</a>
+            <router-link to="/">{{ title }}</router-link>
         </h1>
         <DropDown />
     </header>
